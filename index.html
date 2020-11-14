@@ -23,10 +23,10 @@
                 <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
             </div>
             <div style = "text-align: center; display: inline-block;">
-                    <button>Up</button>
-                    <button>Down</button>
-                    <button>Right</button>
-                    <button>Left</button>
+                    <button id="up">Up</button>
+                    <button id="down">Down</button>
+                    <button id="right">Right</button>
+                    <button id="left">Left</button>
                     <h3>Space Shuttle Height</h3>
                     <p id='spaceShuttleHeight'>0</p><p style = "display: inline-block;"> miles</p>
             </div>
@@ -35,6 +35,29 @@
             <button id = "takeoff">Take off</button>
             <button id = "landing">Land</button>
             <button id = "missionAbort">Abort Mission</button>
-    </div>
+        </div>
+        <!-- If we want to use the onclick Event [onclick="moveLeft()"], the following may be add. -->
+        <!-- <script>
+        function moveLeft() {
+            rocket.style.left = `${rocket.offsetLeft - 10}px`;
+        }
+    
+        function moveRight() {
+            rocket.style.left = `${rocket.offsetLeft + 10}px`;
+        }
+    
+        function moveUp() {
+            rocket.style.top = `${rocket.offsetTop - 10}px`;
+            spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) + 10000; 
+
+        }
+    
+        function moveDown() {
+            rocket.style.top = `${rocket.offsetTop + 10}px`;
+            spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) - 10000; 
+
+        }
+         </script> -->
     </body>
+    
 </html>
